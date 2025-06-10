@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.289" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger\target\test-classes;C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger\target\classes;C:\Users\JoshuaSalcedo\.m2\repository\org\jline\jline\3.30.4\jline-3.30.4.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\JoshuaSalcedo\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\apache\maven\maven-model\3.9.6\maven-model-3.9.6.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\codehaus\plexus\plexus-utils\3.5.1\plexus-utils-3.5.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Manila"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PH"/>
+    <property name="sun.boot.library.path" value="C:\Users\JoshuaSalcedo\.sdkman\candidates\java\current\bin"/>
+    <property name="sun.java.command" value="C:\Users\JoshuaSalcedo\AppData\Local\Temp\surefire10988254800001815232\surefirebooter-20250611061439964_3.jar C:\Users\JoshuaSalcedo\AppData\Local\Temp\surefire10988254800001815232 2025-06-11T06-14-39_852-jvmRun1 surefire-20250611061439964_1tmp surefire_0-20250611061439964_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger\target\test-classes;C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger\target\classes;C:\Users\JoshuaSalcedo\.m2\repository\org\jline\jline\3.30.4\jline-3.30.4.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\JoshuaSalcedo\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\mockito\mockito-junit-jupiter\5.10.0\mockito-junit-jupiter-5.10.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\JoshuaSalcedo\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\apache\maven\maven-model\3.9.6\maven-model-3.9.6.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\codehaus\plexus\plexus-utils\3.5.1\plexus-utils-3.5.1.jar;C:\Users\JoshuaSalcedo\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\JoshuaSalcedo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\JoshuaSalcedo\.sdkman\candidates\java\current"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="jdk.internal.vm.ci.enabled" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\JoshuaSalcedo\AppData\Local\Temp\surefire10988254800001815232\surefirebooter-20250611061439964_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-jvmci-b01"/>
+    <property name="user.name" value="JoshuaSalcedo"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Oracle GraalVM 24.0.1+9.1"/>
+    <property name="localRepository" value="C:\Users\JoshuaSalcedo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\JOSHUA~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\JoshuaSalcedo\IdeaProjects\joshuasalcedo-parent\joshuasalcedo-library-parent\logger"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\JoshuaSalcedo\.sdkman\candidates\java\current\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\GitHub CLI\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\JoshuaSalcedo\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\JoshuaSalcedo\AppData\Local\Programs\Python\Python313\;C:\Program Files\PowerShell\7-preview;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Users\JoshuaSalcedo\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\JoshuaSalcedo\scoop\shims;C:\Users\JoshuaSalcedo\AppData\Local\Programs\oh-my-posh\bin\;C:\Users\JoshuaSalcedo\AppData\Local\Microsoft\WindowsApps;C:\Users\JoshuaSalcedo\.dotnet\tools;C:\Users\JoshuaSalcedo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\JoshuaSalcedo\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\JoshuaSalcedo\.sdkman\candidates\java\current\bin;C:\Users\JoshuaSalcedo\.sdkman\candidates\maven\current\bin;C:\Users\JoshuaSalcedo\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\JoshuaSalcedo\.pnpm\bin;C:\Users\JoshuaSalcedo\AppData\Local\Microsoft\WinGet\Links;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-jvmci-b01"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testEnableDatabaseLogging" classname="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.065">
+    <system-out><![CDATA[[&amp#27;[36mINFO&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.458 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[36mTest info message&amp#27;[0m
+[&amp#27;[91mERROR&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.463 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[91mTest error message&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="testDatabaseLoggingWithLevel" classname="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.056">
+    <system-out><![CDATA[[&amp#27;[36mINFO&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.520 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[36mInfo message&amp#27;[0m
+[&amp#27;[33mWARN&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.520 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[33mWarning message&amp#27;[0m
+[&amp#27;[91mERROR&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.520 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[91mError message&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="testLoggerSpecificDatabaseHandler" classname="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.052">
+    <system-out><![CDATA[[&amp#27;[36mINFO&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.575 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[36mOther logger message&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="testHierarchicalLogging" classname="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.055">
+    <system-out><![CDATA[[&amp#27;[36mINFO&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.628 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[36mParent info&amp#27;[0m
+[&amp#27;[33mWARN&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.629 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[33mChild warning&amp#27;[0m
+[&amp#27;[91mERROR&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.629 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[91mGrandchild error&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="testConfigureLogging" classname="io.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest" time="0.056">
+    <system-out><![CDATA[[&amp#27;[36mINFO&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.684 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[36mTest from class logger&amp#27;[0m
+[&amp#27;[91mERROR&amp#27;[0m]-[&amp#27;[36m2025-06-11 06:14:41.685 AM&amp#27;[0m]  &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor&amp#27;[0m.&amp#27;[33minvoke&amp#27;[0m() - &amp#27;[91mError from class logger&amp#27;[0m
+&amp#27;[91mException: RuntimeException: Test exception&amp#27;[0m
+&amp#27;[31m    at &amp#27;[37mio.joshuasalcedo.logging.manager.LoggerManagerDatabaseTest.&amp#27;[33mtestConfigureLogging&amp#27;[37m(&amp#27;[36mLoggerManagerDatabaseTest.java:136&amp#27;[37m)&amp#27;[0m
+&amp#27;[31m    at &amp#27;[37mjdk.internal.reflect.DirectMethodHandleAccessor.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mDirectMethodHandleAccessor.java:104&amp#27;[37m)&amp#27;[0m
+&amp#27;[31m    at &amp#27;[37mjava.lang.reflect.Method.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mMethod.java:565&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.commons.util.ReflectionUtils.&amp#27;[33minvokeMethod&amp#27;[37m(&amp#27;[36mReflectionUtils.java:728&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.MethodInvocation.&amp#27;[33mproceed&amp#27;[37m(&amp#27;[36mMethodInvocation.java:60&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.&amp#27;[33mproceed&amp#27;[37m(&amp#27;[36mInvocationInterceptorChain.java:131&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.extension.TimeoutExtension.&amp#27;[33mintercept&amp#27;[37m(&amp#27;[36mTimeoutExtension.java:156&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.extension.TimeoutExtension.&amp#27;[33minterceptTestableMethod&amp#27;[37m(&amp#27;[36mTimeoutExtension.java:147&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.extension.TimeoutExtension.&amp#27;[33minterceptTestMethod&amp#27;[37m(&amp#27;[36mTimeoutExtension.java:86&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.&amp#27;[33mlambda$ofVoidMethod$0&amp#27;[37m(&amp#27;[36mInterceptingExecutableInvoker.java:103&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InterceptingExecutableInvoker.&amp#27;[33mlambda$invoke$0&amp#27;[37m(&amp#27;[36mInterceptingExecutableInvoker.java:93&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.&amp#27;[33mproceed&amp#27;[37m(&amp#27;[36mInvocationInterceptorChain.java:106&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InvocationInterceptorChain.&amp#27;[33mproceed&amp#27;[37m(&amp#27;[36mInvocationInterceptorChain.java:64&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InvocationInterceptorChain.&amp#27;[33mchainAndInvoke&amp#27;[37m(&amp#27;[36mInvocationInterceptorChain.java:45&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InvocationInterceptorChain.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mInvocationInterceptorChain.java:37&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InterceptingExecutableInvoker.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mInterceptingExecutableInvoker.java:92&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.execution.InterceptingExecutableInvoker.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mInterceptingExecutableInvoker.java:86&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.&amp#27;[33mlambda$invokeTestMethod$7&amp#27;[37m(&amp#27;[36mTestMethodTestDescriptor.java:218&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.&amp#27;[33minvokeTestMethod&amp#27;[37m(&amp#27;[36mTestMethodTestDescriptor.java:214&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mTestMethodTestDescriptor.java:139&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mTestMethodTestDescriptor.java:69&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$6&amp#27;[37m(&amp#27;[36mNodeTestTask.java:151&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$8&amp#27;[37m(&amp#27;[36mNodeTestTask.java:141&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.Node.&amp#27;[33maround&amp#27;[37m(&amp#27;[36mNode.java:137&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$9&amp#27;[37m(&amp#27;[36mNodeTestTask.java:139&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecuteRecursively&amp#27;[37m(&amp#27;[36mNodeTestTask.java:138&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mNodeTestTask.java:95&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37mjava.util.ArrayList.&amp#27;[33mforEach&amp#27;[37m(&amp#27;[36mArrayList.java:1604&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.&amp#27;[33minvokeAll&amp#27;[37m(&amp#27;[36mSameThreadHierarchicalTestExecutorService.java:41&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$6&amp#27;[37m(&amp#27;[36mNodeTestTask.java:155&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$8&amp#27;[37m(&amp#27;[36mNodeTestTask.java:141&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.Node.&amp#27;[33maround&amp#27;[37m(&amp#27;[36mNode.java:137&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$9&amp#27;[37m(&amp#27;[36mNodeTestTask.java:139&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecuteRecursively&amp#27;[37m(&amp#27;[36mNodeTestTask.java:138&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mNodeTestTask.java:95&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37mjava.util.ArrayList.&amp#27;[33mforEach&amp#27;[37m(&amp#27;[36mArrayList.java:1604&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.&amp#27;[33minvokeAll&amp#27;[37m(&amp#27;[36mSameThreadHierarchicalTestExecutorService.java:41&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$6&amp#27;[37m(&amp#27;[36mNodeTestTask.java:155&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$8&amp#27;[37m(&amp#27;[36mNodeTestTask.java:141&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.Node.&amp#27;[33maround&amp#27;[37m(&amp#27;[36mNode.java:137&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mlambda$executeRecursively$9&amp#27;[37m(&amp#27;[36mNodeTestTask.java:139&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.ThrowableCollector.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mThrowableCollector.java:73&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecuteRecursively&amp#27;[37m(&amp#27;[36mNodeTestTask.java:138&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.NodeTestTask.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mNodeTestTask.java:95&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.&amp#27;[33msubmit&amp#27;[37m(&amp#27;[36mSameThreadHierarchicalTestExecutorService.java:35&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mHierarchicalTestExecutor.java:57&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mHierarchicalTestEngine.java:54&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:198&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:169&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:93&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mlambda$execute$0&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:58&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mwithInterceptedStreams&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:141&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.EngineExecutionOrchestrator.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mEngineExecutionOrchestrator.java:57&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.DefaultLauncher.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mDefaultLauncher.java:103&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.DefaultLauncher.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mDefaultLauncher.java:85&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.junit.platform.launcher.core.DelegatingLauncher.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mDelegatingLauncher.java:47&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.junitplatform.LazyLauncher.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mLazyLauncher.java:56&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.junitplatform.JUnitPlatformProvider.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mJUnitPlatformProvider.java:184&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.junitplatform.JUnitPlatformProvider.&amp#27;[33minvokeAllTests&amp#27;[37m(&amp#27;[36mJUnitPlatformProvider.java:148&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.junitplatform.JUnitPlatformProvider.&amp#27;[33minvoke&amp#27;[37m(&amp#27;[36mJUnitPlatformProvider.java:122&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.booter.ForkedBooter.&amp#27;[33mrunSuitesInProcess&amp#27;[37m(&amp#27;[36mForkedBooter.java:385&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.booter.ForkedBooter.&amp#27;[33mexecute&amp#27;[37m(&amp#27;[36mForkedBooter.java:162&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.booter.ForkedBooter.&amp#27;[33mrun&amp#27;[37m(&amp#27;[36mForkedBooter.java:507&amp#27;[37m)&amp#27;[0m
+&amp#27;[90m    at &amp#27;[37morg.apache.maven.surefire.booter.ForkedBooter.&amp#27;[33mmain&amp#27;[37m(&amp#27;[36mForkedBooter.java:495&amp#27;[37m)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
