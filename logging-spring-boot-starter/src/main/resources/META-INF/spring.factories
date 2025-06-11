@@ -1,0 +1,4 @@
+# Auto Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.joshuasalcedo.logging.spring.autoconfigure.LoggingAutoConfiguration,\
+  io.joshuasalcedo.logging.spring.autoconfigure.LoggingActuatorConfiguration

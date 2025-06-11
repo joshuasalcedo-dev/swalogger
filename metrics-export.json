@@ -1,0 +1,82 @@
+{
+  "basicStatistics" : {
+    "totalLogs" : 412,
+    "droppedLogs" : 0,
+    "droppedPercentage" : 0.0,
+    "handlerFailures" : 2,
+    "errorRate" : 1.9417475728155338,
+    "throughputPerSecond" : 0.0,
+    "configurationChanges" : 0
+  },
+  "performance" : {
+    "avgProcessingTimeNanos" : 113705,
+    "avgProcessingTimeMicros" : 113.705,
+    "slowestLogTimeNanos" : 3553800,
+    "slowestLogTimeMillis" : 3.5538,
+    "avgAsyncLatencyNanos" : 0,
+    "avgAsyncLatencyMicros" : 0.0,
+    "slowestAsyncLatencyNanos" : 0,
+    "slowestAsyncLatencyMillis" : 0.0
+  },
+  "memory" : {
+    "currentUsageBytes" : 31831656,
+    "currentUsageMB" : 30.357032775878906,
+    "peakUsageBytes" : 31831656,
+    "peakUsageMB" : 30.357032775878906
+  },
+  "logLevelCounts" : {
+    "EVENT" : 0,
+    "INFO" : 402,
+    "CRITICAL" : 2,
+    "TODO" : 0,
+    "WARN" : 2,
+    "ERROR" : 6,
+    "DEBUG" : 0
+  },
+  "loggerCounts" : {
+    "" : 412
+  },
+  "handlerCounts" : {
+    "ConsoleHandler" : 412
+  },
+  "errorCounts" : {
+    "Exception_SQLException" : 1,
+    "RuntimeException" : 1,
+    "HandlerFailure_DatabaseHandler" : 1,
+    "Exception_RuntimeException" : 1,
+    "HandlerFailure_FileHandler" : 1,
+    "Exception_IllegalArgumentException" : 1,
+    "IllegalArgumentException" : 1,
+    "Exception_IOException" : 1
+  },
+  "queueSizes" : {
+    "TestQueue" : 130
+  },
+  "methodCounts" : {
+    "PerformanceDemo.info" : 100,
+    "Thread-1.info" : 20,
+    "ErrorTrackingDemo.error" : 2,
+    "MetricsDemo.warning" : 1,
+    "Thread-4.info" : 20,
+    "MetricsDemo.debug" : 1,
+    "Thread-2.info" : 20,
+    "MetricsDemo.info" : 1,
+    "Thread-0.info" : 20,
+    "MetricsDemo.error" : 1,
+    "Thread-3.info" : 20,
+    "MetricsDemo.critical" : 1
+  },
+  "timestamps" : {
+    "startTime" : "{EVENT=0, INFO=402, CRITICAL=2, TODO=0, WARN=2, ERROR=6, DEBUG=0}",
+    "reportTime" : "2025-06-11T00:59:54.159972400Z"
+  },
+  "topLoggers" : [ {
+    "name" : "",
+    "count" : 412
+  } ],
+  "metadata" : {
+    "version" : "1.0",
+    "format" : "comprehensive-json",
+    "exportedAt" : "2025-06-11T00:59:54.159972400Z"
+  }
+}

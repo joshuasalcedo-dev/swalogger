@@ -1,0 +1,46 @@
+joshuasalcedo:
+  logging:
+    enabled: true
+    level: DEBUG
+    
+    console:
+      enabled: true
+      formatter: pattern
+      pattern: "%d{yyyy-MM-dd HH:mm:ss} [%level] [%logger] - %message%n"
+      use-jline: false
+      use-color: true
+    
+    file:
+      enabled: true
+      path: logs/sample-app.log
+      formatter: pattern
+      pattern: "%d{yyyy-MM-dd HH:mm:ss} [%level] [%logger] - %message%n"
+    
+    metrics:
+      enabled: true
+      auto-report: false
+      actuator-integration: true
+    
+    loggers:
+      io.joshuasalcedo.logging.spring: DEBUG
+      org.springframework: WARN
+
+# Actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,loggingMetrics
+  endpoint:
+    health:
+      show-details: always
+
+# Server configuration for testing
+server:
+  port: 8080
+
+# Logging configuration
+logging:
+  level:
+    root: WARN
+    io.joshuasalcedo.logging: DEBUG
