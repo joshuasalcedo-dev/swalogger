@@ -2,6 +2,7 @@ package io.joshuasalcedo.logging.formatter;
 
 import io.joshuasalcedo.logging.core.Log;
 import io.joshuasalcedo.logging.core.LogLevel;
+import io.joshuasalcedo.logging.core.Logger;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -117,5 +118,18 @@ public class SimpleFormatter implements Formatter {
         }
 
         return sb.toString();
+    }
+}
+
+class SimpleFormatterTest {
+    public static void main(String[] args) {
+        Logger logger = new Logger(SimpleFormatter.class.toGenericString());
+
+        logger.debug("This is a debug message");
+        logger.critical("This is a critical");
+        logger.info("This is an info message");
+        logger.warning("This is a warning message");
+        logger.error("This is an error message");
+
     }
 }

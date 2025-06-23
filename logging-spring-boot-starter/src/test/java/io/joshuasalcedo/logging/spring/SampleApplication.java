@@ -25,12 +25,11 @@ public class SampleApplication implements CommandLineRunner {
         // Test different log levels
         logger.debug("Debug message - should be visible in development mode");
         logger.info("Info message");
-        logger.warn("Warning message");
+        logger.warning("Warning message");
         logger.error("Error message");
         
         // Test structured logging
-        logger.info("User action", "user", "john", "action", "login", "success", true);
-        
+
         // Test exception logging
         try {
             throw new RuntimeException("Sample exception for testing");
